@@ -15,14 +15,14 @@
 `switch1(config)#vlan 5` <br>
 `switch1(config-vlan)# name switch1` <br>
 `switch1(config-vlan)# ex` <br>
-`switch1(config)#int vlan 5`
+`switch1(config)#int vlan 5`  <br>
 `switch1(config-if)#ip address 192.168.5.2 255.255.255.252` **Задаем ip на интерфейс коммутатора для удаленного подключения** <br>
 `switch1(config-if)# ip default-gateway 192.168.5.1` **задаем шлюз по умолчанию** <br>
 `switch1(config-if)# ex` <br>
 `switch1(config)#int range f0/1-2` **переходим к настройке нескольких интерфейсов** <br>
 `switch1(config-if-range)#switchport mode access` **указываем что данный интерфейс является интерфейсом доступа** <br>
 `switch1(config-if-range)#switchport access vlan 2 ` **указываем vlan этого интерфейса** <br>
-`switch1(config-if-range)#ex`
+`switch1(config-if-range)#ex` <br>
 `switch1(config)#int range f0/3-4 `<br>
 `switch1(config-if-range)#switchport mode access ` **указываем что данный интерфейс является интерфейсом доступа** <br>
 `switch1(config-if)#switchport access vlan 3 ` **указываем vlan этого интерфейса** <br>
