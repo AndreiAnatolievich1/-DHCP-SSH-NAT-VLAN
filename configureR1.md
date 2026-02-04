@@ -61,7 +61,7 @@
 `router1(config)# ex`<br>
 `router1# copy running-config ftp:`   **Делаем backup** <br>
 `Address or name of remote host []? 192.168.4.4`  **указываем адрес FTP сервера** <br>
-`Destination filename []? Switch1_conf`   **Указываем названия файла** <br>
+`Destination filename []? Router1_conf`   **Указываем названия файла** <br>
 
 
 
