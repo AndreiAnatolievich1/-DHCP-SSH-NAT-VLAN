@@ -9,3 +9,10 @@
 
 <img width="637" height="243" alt="Screenshot_9" src="https://github.com/user-attachments/assets/56c58945-dcd5-47f3-bf11-25482ca1e6e3" /><br>
 `тут видно что SSh на коммутаторе настроенно верно , так как можем к нему подключиться удалённо с pc`
+
+<img width="699" height="688" alt="Screenshot_2" src="https://github.com/user-attachments/assets/a2cc25b8-61cf-4723-8d8d-29abd5e39c2f" /> <br>
+`тут видим бэкап файлы сохранённые на сервере и пару логин с паролем`
+
+<img width="701" height="920" alt="Screenshot_1" src="https://github.com/user-attachments/assets/5b7b53b5-a57e-4f95-9ed0-51a570b830e6" />
+
+
