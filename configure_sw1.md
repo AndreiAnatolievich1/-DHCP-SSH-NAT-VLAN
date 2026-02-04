@@ -49,3 +49,10 @@
 `switch1(config)#aaa authorization exec default local group radius local` <br>
 `switch1(config)#aaa accounting exec default start-stop group radius` <br>
 
+`switch1(config)# aaa accounting exec default start-stop group radius`   **настраиваем политику учёта** <br>
+`switch1(config)# ip ftp username admin_FTP`  **Настраиваем имя пользователя для FTP-соединений** <br>
+`switch1(config)# ip ftp password cisco`   **Настраиваем пароль пользователя для FTP-соединений** <br>
+`switch1(config)# ex`<br>
+`switch1# copy running-config ftp:`   **Делаем backup** <br>
+`Address or name of remote host []? 192.168.4.4`  **указываем адрес FTP сервера** <br>
+`Destination filename []? Switch1_conf`   **Указываем названия файла** <br>
