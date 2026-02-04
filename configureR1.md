@@ -52,7 +52,23 @@
 `router1(config-radius-server)# address ipv4 192.168.4.3 auth-port 1645` **указываем ip адрес сервера и порт на `котором будем работать`** <br>
 `router1(config-radius-server)#key DerParol213 ` **задаём пароль , он должен совпадать  с паролем `настроенном на сервере`** <br>
 `router1(config-radius-server)# ex` <br>
-`router1(config)# aaa authentication login default group radius`  **настраиваем политику аутентификации** <br>
-`router1(config)# aaa authorization exec default local group radius local`  **настраиваем политику авторизации** <br>
-`router1(config)# aaa accounting exec default start-stop group radius`  **настраиваем политику учёта** <br>
+`router1(config)# aaa authentication login default group radius`   **настраиваем политику аутентификации**  <br>
+`router1(config)# aaa authorization exec default local group radius local`   **настраиваем политику авторизации** <br>
+
+`router1(config)# aaa accounting exec default start-stop group radius`   **настраиваем политику учёта** <br>
+`router1(config)# ip ftp username admin_FTP`  **Настраиваем имя пользователя для FTP-соединений** <br>
+`router1(config)# ip ftp password cisco`   **Настраиваем пароль пользователя для FTP-соединений** <br>
+`router1(config)# ex`<br>
+`router1# copy running-config ftp:`   **Делаем backup** <br>
+`Address or name of remote host []? 192.168.4.4`  **указываем адрес FTP сервера** <br>
+`Destination filename []? Switch1_conf`   **Указываем названия файла** <br>
+
+
+
+
+
+
+
+
+
 
