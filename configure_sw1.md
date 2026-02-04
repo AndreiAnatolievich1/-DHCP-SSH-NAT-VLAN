@@ -31,6 +31,7 @@
 `switch1(config-if)#switchport mode trunk` **обозначаем интерфейс как trunk , это озночает что по нему теперь могут ходить тегированные frame** <br>
 `switch1(config-if)#switchport trunk all vlan 2,3,4,5`  <br>
 `switch1(config-if)#ex` <br>
+
 `switch1(config)# username admin_sw1 privilege 15 secret Pa$$w0rd` **задаём пользователя с правами admina** <br>
 `switch1(config)# line console 0` **переходим в режим настройки консольного подключения** <br>
 `switch1(config-line)# login local` **nребование аутентификации по локальной базе пользователей при подключении через консоль** <br>
@@ -40,8 +41,10 @@
 `switch1(config-line)# transport input ssh` **Разрешение только SSH подключений на VTY линиях** <br>
 `switch1(config-line)# login authentication default` <br>
 `switch1(config-line)# en` <br>
+
 `switch1(config)#ip domain-name test1.local ` **Установка доменного имени для устройства. Это необходимо для генерации RSA ключей, которые используются в SSH**<br>
 `switch1(config)#crypto key generate rsa general-keys modulus 2048 ` **Генерируем ключи шифрования** <br>
+
 `switch1(config)#aaa new-model` <br>
 `switch1(config)#radius-server host 192.168.4.2 auth-port 1645` <br>
 `switch1(config)#radius-server key DerParol` <br>
@@ -49,7 +52,6 @@
 `switch1(config)#aaa authorization exec default local group radius local` <br>
 `switch1(config)#aaa accounting exec default start-stop group radius` <br>
 
-`switch1(config)# aaa accounting exec default start-stop group radius`   **настраиваем политику учёта** <br>
 `switch1(config)# ip ftp username admin_FTP`  **Настраиваем имя пользователя для FTP-соединений** <br>
 `switch1(config)# ip ftp password cisco`   **Настраиваем пароль пользователя для FTP-соединений** <br>
 `switch1(config)# ex`<br>
